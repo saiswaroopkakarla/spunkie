@@ -95,7 +95,7 @@ def doTheFlames(update:Update,context:CallbackContext):
 def reply(update:Update,context:CallbackContext):
     bot.send_message(
     chat_id=update.effective_chat.id,
-    text="Your message is: " +update.message.text + ". please send proper names")
+    text="Please enter Your Name/YourCrush's Name. For ex: Ramaraju/Priya rani")
 
 def start(update, context):
     """Send a message when the command /start is issued."""
@@ -132,9 +132,9 @@ def remove_match_char(list1, list2):
 
 dispatcher.add_handler(CommandHandler("start", start))
 
-start_value=CommandHandler("flames",doTheFlames)
+start_value=CommandHandler("flames",reply)
 
-couple_name= MessageHandler(Filters.text, reply)
+couple_name= MessageHandler(Filters.text, doTheFlames)
 
 dispatcher.add_handler(start_value)
 
