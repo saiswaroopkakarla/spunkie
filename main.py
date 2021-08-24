@@ -19,7 +19,7 @@ def doTheFlames(update:Update,context:CallbackContext):
 def reply(update:Update,context:CallbackContext):
     bot.send_message(
     chat_id=update.effective_chat.id,
-    text="Your message is: " +update.message.text + "./n please send proper names")
+    text="Your message is: " +update.message.text + ". please send proper names")
 
 
 start_value=CommandHandler("flames",doTheFlames)
