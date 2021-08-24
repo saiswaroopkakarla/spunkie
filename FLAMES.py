@@ -25,12 +25,11 @@ def remove_match_char(list1, list2):
     # return the concatenated list with False flag
     list3 = list1 + ["*"] + list2
     return [list3, False]
- 
-# Driver code
+def callFlames(Firstname,Secondname):
 if __name__ == "__main__" :
      
     # take first name  
-    p1 = input("Player 1 name : ")
+    p1 = Firstname
  
     # converted all letters into lower case
     p1 = p1.lower()
@@ -42,7 +41,7 @@ if __name__ == "__main__" :
     p1_list = list(p1)
  
     # take 2nd name
-    p2 = input("Player 2 name : ")
+    p2 = Secondname
     p2 = p2.lower()
     p2.replace(" ", "")
     p2_list = list(p2)
@@ -105,4 +104,4 @@ if __name__ == "__main__" :
             result = result[ : len(result) - 1]
  
     # print final result
-    print("Relationship status :", result[0])
+    return "Relationship status :"+ result[0]
