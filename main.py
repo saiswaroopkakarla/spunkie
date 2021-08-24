@@ -86,11 +86,11 @@ def doTheFlames(update:Update,context:CallbackContext):
             else :
                 result = result[ : len(result) - 1]
  
-    # print final result
-     
-    bot.send_message(
-    chat_id=update.effective_chat.id,
-    text="Relationship status :"+ result[0])
+       # print final result
+        
+        bot.send_message(
+        chat_id=update.effective_chat.id,
+        text="Relationship status :"+ result[0])
 
 def reply(update:Update,context:CallbackContext):
     bot.send_message(
