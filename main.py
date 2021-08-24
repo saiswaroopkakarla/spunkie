@@ -99,7 +99,7 @@ def reply(update:Update,context:CallbackContext):
 
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi!')
+    update.message.reply_text('FLAME is a game named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies.[1] It is a popular game among young girls at sleepovers, especially with pre-teens and teens who are beginning to explore the world of crushes. This game does not accurately predict whether or not an individual is right for you, but it can be fun to play this with your friends. please send /flames to do FLAMES. Thank you')
 
  #code for flames
 def remove_match_char(list1, list2):
